@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f3990507041f43df806f31e89995b545" Name="Diagram1">
+        <EntityTypeShape EntityType="SiparisDBModel.Cargo" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiparisDBModel.Customer" Width="1.5" PointX="8.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiparisDBModel.Market" Width="1.5" PointX="3" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiparisDBModel.Order" Width="1.5" PointX="5.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiparisDBModel.OrderStatus" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiparisDBModel.sysdiagrams" Width="1.5" PointX="0.625" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiparisDBModel.user" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <AssociationConnector Association="SiparisDBModel.FK_Cargo_user" ManuallyRouted="false" />
+        <AssociationConnector Association="SiparisDBModel.FK_Order_Cargo" ManuallyRouted="false" />
+        <AssociationConnector Association="SiparisDBModel.FK_Customer_Market" ManuallyRouted="false" />
+        <AssociationConnector Association="SiparisDBModel.FK_Customer_user" ManuallyRouted="false" />
+        <AssociationConnector Association="SiparisDBModel.FK_Order_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="SiparisDBModel.FK_Market_user" ManuallyRouted="false" />
+        <AssociationConnector Association="SiparisDBModel.FK_Order_Market" ManuallyRouted="false" />
+        <AssociationConnector Association="SiparisDBModel.FK_Order_OrderStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SiparisDBModel.FK_Order_user" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

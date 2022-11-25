@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Pazaryeri Ekleme";
+    Layout = "~/Shared/_LayoutPage.cshtml";
+}
+
+<div class="col-md-12">
+    <div class="card">
+        <form class="form-horizontal" action="/Market/Insert" method="post">
+            <div class="card-body">
+                <h4 class="card-title">Pazaryeri Ekleme Ekranı</h4>
+                <div class="form-group row">
+                    <label for="fname" class="control-label col-form-label">Pazaryeri Adı</label>
+                    <div class="col-12">
+                        <input type="text" name="MarketName" class="form-control" id="fname" placeholder="Lütfen Pazaryeri Adınızı Giriniz......" required>
+                    </div>
+              
+                </div>
+                <div class="form-group row">
+                    <label for="lname" class="control-label col-form-label">Komisyon Oranı</label>
+                    <div class="col-12">
+                        <input type="text" name="Commission" class="form-control" id="lname" placeholder="Lütfen Komisyon Oranını Giriniz....." required>
+                    </div>
+               
+                </div>
+            </div>
+            <div class="border-top">
+                <div class="card-body">
+                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
