@@ -942,6 +942,11 @@
     <Content Include="Assets\dist\js\pages\sparkline\jquery.charts-sparkline.js" />
     <Content Include="Assets\dist\js\sidebarmenu.js" />
     <Content Include="Assets\dist\js\waves.js" />
+    <Content Include="Assets\Img\Aras.png" />
+    <Content Include="Assets\Img\ImagesNull.png" />
+    <Content Include="Assets\Img\mng.png" />
+    <Content Include="Assets\Img\Ptt.png" />
+    <Content Include="Assets\Img\Yurtiçi.png" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -950,12 +955,16 @@
     <Compile Include="Attribute\AuthAttribute.cs" />
     <Compile Include="Attribute\SessionContext.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CargoController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MarketController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CargoVM.cs" />
+    <Compile Include="Models\CustomerVM.cs" />
     <Compile Include="Models\LoginVM.cs" />
     <Compile Include="Models\MarketVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -1149,6 +1158,12 @@
     <Content Include="Views\Market\Insert.cshtml" />
     <Content Include="Views\Market\Index.cshtml" />
     <Content Include="Views\Market\Update.cshtml" />
+    <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Customer\Insert.cshtml" />
+    <Content Include="Views\Customer\Update.cshtml" />
+    <Content Include="Views\Cargo\Index.cshtml" />
+    <Content Include="Views\Cargo\Insert.cshtml" />
+    <Content Include="Views\Cargo\Update.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

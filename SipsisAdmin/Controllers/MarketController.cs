@@ -31,7 +31,7 @@ namespace SipsisAdmin.Controllers
             {
                 MarketName = gelen.MarketName,
                 Commission = gelen.Commission,
-                UserId = ((SessionContext)Session["SessionContext"]).ID,
+                UserId = ((SessionContext)Session["SessionContext"]).ID
             };
             service.MarketServices.Insert(market);  
             return Redirect("/Market/Index");
@@ -51,6 +51,28 @@ namespace SipsisAdmin.Controllers
                     return Redirect("/Market/Index");
                 }
 
+            }
+            else
+            {
+                return Redirect("/Market/Index");
+            }
+        }
+
+        [HttpPost]
+        public ActionResult Update(MarketVM gelen)
+        {
+            if(ModelState.IsValid) 
+            {
+                Market market = new Market()
+                { 
+                    MarketName = gelen.MarketName,
+                    Commission = gelen.Commission,
+                    Id = gelen.Id,
+                    UserId = ((SessionContext)Session["SessionContext"]).ID,
+                };
+
+                service.MarketServices.update(market);
+                return Redirect("/Market/Index");
             }
             else
             {

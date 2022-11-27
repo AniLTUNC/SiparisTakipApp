@@ -9,5 +9,14 @@ namespace SipsisBLL.Repsitory.Entity
 {
     public class CargoRepository : Base.BaseRepository<Cargo>
     {
+        public void Update(Cargo gelen)
+        {
+            var bul = this.Find(gelen.Id);
+            bul.UserId = gelen.UserId;
+            bul.CargoName = gelen.CargoName;
+            bul.CargoImageURL = gelen.CargoImageURL;
+            Save();
+
+        }
     }
 }
